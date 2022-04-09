@@ -1,0 +1,57 @@
+body{
+    background-color: #eee;
+}
+.wrapper{
+    width: 100%;
+    
+    margin: 0 auto;
+}
+nav{
+    background-color: #333;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    padding:10px;
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+nav a:hover{
+    background-color: #555;
+}
+
+.card{
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px){
+
+    nav ul{
+        display: flex;
+        justify-content: flex-start;
+    }
+    nav li{
+        flex:1 1 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .last-part{
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .delete{
+        padding-left:10px;
+    }
+}
+
+.delete{
+    display: block;
+}
