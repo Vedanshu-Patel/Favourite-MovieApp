@@ -3,7 +3,6 @@ let BodyParser=require('body-parser');
 let mongoose = require('mongoose');
 let methodOverride = require('method-override');
 let request = require("request");
-const { date } = require('faker/lib/locales/az');
 
 let app = express();
 const PORT = process.env.PORT || 3000 ; 
