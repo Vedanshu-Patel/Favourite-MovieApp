@@ -11,7 +11,19 @@ app.use(BodyParser.urlencoded({ extended: false}));
 app.use(BodyParser.json());
 app.use(methodOverride("_method"));
 
-mongoose.connect("mongodb://localhost:27017/MovieApp");
+mongoose.connect("mongodb://localhost:27017/MovieApp",{
+    useNewUrlParser: true,
+    useUnifiedTopology:true,
+    useCreateIndex:true
+
+
+}).then(()=> {
+    console.log("connection successful");
+
+}).catch((e) =>{
+    console.log("error")
+
+})
 
 let MovieSchema = new mongoose.Schema({
     Title: String,
