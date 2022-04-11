@@ -11,7 +11,7 @@ app.use(BodyParser.urlencoded({ extended: false}));
 app.use(BodyParser.json());
 app.use(methodOverride("_method"));
 
-mongoose.connect("mongodb+srv://vedanshu:daxesh@movieapp.thyor.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",{
+mongoose.connect("mongodb+srv://vedanshu:daxesh@movieapp.thyor.mongodb.net/MovieApp?retryWrites=true&w=majority",{
     useNewUrlParser: true,
     useUnifiedTopology:true,
     useCreateIndex:true
