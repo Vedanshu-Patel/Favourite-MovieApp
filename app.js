@@ -85,7 +85,7 @@ app.post("/movies",function (req, res) {
     
     Movie.create(pdata,function (err, m) {
         if(err){
-            res.render("note.ejs");
+            console.log(err);
         }
         else{
             res.redirect("/movies/favorite");
